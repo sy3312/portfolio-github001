@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+  margin: 0;
+  padding: 15px;
+  overflow-x: hidden;
+  background-color: rgba(245,245,245,.99);
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+a{
+  color: #333;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+/* ハンバーガーここから */
+.ham{
+  position: fixed;
+  top: 1.8%;
+  right: 6%;
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 100;
+
+  display: none;
+}
+.ham span{
+  width: 100%;
+  height: 2px;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .3s;
+}
+.ham span:nth-of-type(2){
+  top: 10px;
+}
+.ham span:nth-of-type(3){
+  top: 20px;
+}
+/* js click */
+
+.ham.clickAction span:nth-of-type(1) {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+.ham.clickAction span:nth-of-type(2) {
+  opacity: 0;
+}
+.ham.clickAction span:nth-of-type(3) {
+  transform: rotate(45deg);
+  top: 11px;
+}
+/* ナビメニュー */
+ul.hamNav {
+  position: fixed;
+  top: -100%;
+  right: 0;
+  z-index: 99;
+  width: 100%;
+  height: 27vh;
+  overflow-y: auto;
+  background-image: radial-gradient(circle, #a4a4a4, #a3a3a3, #a1a1a1, #a09fa0, #9f9e9e);
+  opacity: .9;
+  transition: .6s;
+}
+ul.hamNav{
+  padding-top: 25px;
+  height: 27vh;
+}
+ul.hamNav li a{
+  display: block;
+  color: #F5F5F5;
+  padding-bottom: 9px;
+  padding-left: 7%;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: bold !important;
+}
+ul.hamNav.clickOpen{
+  top: 0;
+}
+/* ハンバーガーここまで */
+
+/* ヘッダーここから */
+.headerWrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: .2rem;
+  padding: .3% 2% 1%;
+}
+.headerLeft h2{
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.headerRight ul{
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.headerRight ul li a{
+  display: block;
+  transform: scale(1);
+  transition: .3s;
+  padding: 3%;
+  font-weight: bold;
+}
+/* ヘッダーここまで */
+
+/* メインここから */
+.mainImage {
+  margin: 0 auto;
+  width: 100%;
+  height: 89vh;
+  background-image: url(../img/top-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mainImage .mainText {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+  color: 	#F5F5F5;
+}
+.mainImage .mainText p{
+  font-size: 14px;
+  text-shadow: 0px 5px 3px rgba(245,245,245, .6);
+  font-weight: bold;
+}
+.mainImage .mainText h3{
+  font-size: 30px;
+  font-weight: normal;
+  text-shadow: 0px 5px 5px rgba(245,245,245, .6);
+}
+/* メインここまで */
+
+/* 共通CSS */
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 50px auto;
+  color: #555;
+}
+.wrapper h3{
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.contents {
+  width: 100%;
+  padding: 2%;
+}
+.contents ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contents ul li{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: .6s;
+}
+.contents ul li.scrllactive{
+  opacity: 1;
+  transform: none;
+}
+
+/* スキルここから */
+.contents .skillList{
+  width: 33.33%;
+  padding: 3%;
+}
+.contents .skillList .skillListName {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.contents .skillList .skillListName i{
+  font-size: 38px;
+  color: #555;
+  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.4);
+}
+.contents .skillList .skillListName h3{
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding-top: 18px;
+}
+.contents .skillList p{
+  overflow-wrap: break-word;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  padding: 1%;
+  font-size: 13px;
+}
+/* スキルここまで */
+
+/* Webここから */
+.contents .webList{
+  width: 33.3%;
+  padding: 3%;
+}
+.contents .webList a img{
+  display: block;
+  width: 100%;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: 0.3s;
+}
+/* Webここまで */
+
+/* Bannerここから */
+.contents .bannerList {
+  width: 32%;
+  padding: 1%;
+}
+.contents .bannerList a img{
+  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 4px 12px;
+  transition: 0.3s;
+}
+/* Bannerここまで */
+
+/* フッターここから */
+footer{
+  background-image: url(../img/footer-image.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* フッターここまで */
+
+
+/* マウスホバー */
+@media screen and (min-width: 768px) {
+  .headerRight ul li a:hover{
+    opacity: .7;
+    transform: scale(1.06);
+  }
+  .contents .webList a img:hover{
+    opacity: 0.7;
+    transform: scale(1.04);
+  }
+  .contents .bannerList a img:hover{
+    opacity: 0.7;
+    transform: scale(1.04);
+  }
+}
+
+
+/* レスポンシブここから */
+@media screen and (max-width: 768px){
+  .ham {
+    display: block;
+  }
+  .headerRight {
+    display: none;
+  }
+  /* 各コンテンツ */
+  .skillList p{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contents .skillList {
+    width: 95%;
+    margin-top: 15px;
+  }
+  .contents .webList{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contents .banner {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px 0;
+  }
+  .contents .bannerList {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .mainImage {
+    background-image: url(../img/top-image-sp.jpg);
+  }
+  .mainImage .mainText {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-15%, -50%);
+  }
+  .contents .skillList .skillListName h3{
+    font-size: 16px;
+  }
+  .skillList p{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+}

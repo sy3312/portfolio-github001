@@ -31,7 +31,6 @@ li{
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  background-attachment: fixed;
 }
 /* 共通CSS */
 .wrap {
@@ -389,7 +388,6 @@ ul.situationContents .situation a img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     transition: 0.5s;
   }
 /* チケット料金 */
@@ -471,7 +469,6 @@ a.mapImage{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   opacity: 0.6;
   cursor: pointer;
   transition: 0.5s;
@@ -669,17 +666,7 @@ ul.hamNav.clickOpen{
 
 
 /* レスポンシブここから */
-@media screen and (max-width: 1024px) {
-  .mainImage{
-    background-attachment: scroll;
-  }
-  a.foodImage{
-    background-attachment: scroll;
-  }
-  a.mapImage{
-    background-attachment: scroll;
-  }
-}
+
 @media screen and (max-width: 768px){
 .ham {
   display: block;

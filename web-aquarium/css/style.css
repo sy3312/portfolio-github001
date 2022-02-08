@@ -381,17 +381,17 @@ ul.situationContents .situation a img{
   width: 100%;
   margin: 20px auto 0;
 }
-a.foodImage{
-  display: block;
-  width: 100%;
-  height: 300px;
-  background-image: url(../img/food.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  transition: 0.5s;
-}
+  a.foodImage{
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    transition: 0.5s;
+  }
 /* チケット料金 */
 .priceList{
   max-width: 1000px;
@@ -759,6 +759,9 @@ a.mapImage{
   }
 }
 @media screen and (max-width: 468px) {
+.mainImage{
+  background-attachment: none;
+}
 h3.heading {
   letter-spacing: 1px;
   margin-bottom: 16px;
@@ -839,9 +842,11 @@ ul.situationContents .situation a img{
 }
 a.foodImage{
   height: 200px;
+  background-attachment: none;
 }
 a.mapImage{
   height: 200px;
+  background-attachment: none;
 }
 .priceBox {
   width: 95%;

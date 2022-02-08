@@ -669,6 +669,17 @@ ul.hamNav.clickOpen{
 
 
 /* レスポンシブここから */
+@media screen and (max-width: 1024px) {
+  .mainImage{
+    background-attachment: scroll;
+  }
+  a.foodImage{
+    background-attachment: scroll;
+  }
+  a.mapImage{
+    background-attachment: scroll;
+  }
+}
 @media screen and (max-width: 768px){
 .ham {
   display: block;
@@ -731,6 +742,7 @@ a.foodImage{
 a.mapImage{
   height: 250px;
 }
+
 }
 
 @media screen and (max-width: 578px) {
@@ -759,9 +771,6 @@ a.mapImage{
   }
 }
 @media screen and (max-width: 468px) {
-.mainImage{
-  background-attachment: scroll;
-}
 h3.heading {
   letter-spacing: 1px;
   margin-bottom: 16px;

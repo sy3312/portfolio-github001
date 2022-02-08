@@ -760,7 +760,7 @@ a.mapImage{
 }
 @media screen and (max-width: 468px) {
 .mainImage{
-  background-attachment: none;
+  background-attachment: scroll;
 }
 h3.heading {
   letter-spacing: 1px;
@@ -842,11 +842,11 @@ ul.situationContents .situation a img{
 }
 a.foodImage{
   height: 200px;
-  background-attachment: none;
+  background-attachment: scroll;
 }
 a.mapImage{
   height: 200px;
-  background-attachment: none;
+  background-attachment: scroll;
 }
 .priceBox {
   width: 95%;

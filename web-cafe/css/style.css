@@ -781,9 +781,11 @@ ul.newsCntents li a .day{
   width: 150px;
   font-size: 16px;
   letter-spacing: 2px;
+  border-bottom: none;
   padding-bottom: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
+
 .contents .heading .five{
   color: #76A200;
   font-size: 28px;

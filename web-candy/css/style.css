@@ -7,7 +7,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
-  background-color: #FFFFF5;
+  background-color: #dddddd;
   color: #333;
   font-family: 'Acme', sans-serif;
   font-family: 'Cormorant Garamond', serif;
@@ -29,7 +29,7 @@ li{
 
 .bagckColor1 {
   width: 100%;
-  background-color: rgba(255, 179, 179, 1);
+  background-color: rgba(245, 165, 0, .3);
 }
 
 /* 共通CSS */
@@ -80,7 +80,7 @@ header{
   color: #333;
   padding: 2%;
 }
-.headerLeft h3{
+.headerLeft h1{
   font-size: 28px;
   letter-spacing: 2px;
 }
@@ -286,7 +286,7 @@ header{
 /* new Arrival */
 .arrivalWrap {
   width: 100%;
-  background-color: rgba(255, 255, 179, 1);
+  background-color: rgba(245, 165, 0, .3);
   padding: 100px 2%;
 }
 .newIceBox {
@@ -312,7 +312,7 @@ header{
   transform:rotate(-13deg);
 }
 .newIceText h4{
-  color: #FF8080;
+  color: 	#4682B4;
   font-size:19px;
   letter-spacing: 2px;
 }
@@ -414,7 +414,7 @@ p.eventText {
 
 /* 商品一覧 */
 .itemListWrap {
-  background-color: #B8E6BE;
+  background-color: rgba(255,228,181,.6);
   padding: 100px 0;
 }
 .itemList {
@@ -500,8 +500,8 @@ p.eventText {
 /* footer */
 footer{
   width: 100%;
-  padding: 60px 2%;
-  background-color: rgba(255, 179, 179, 1);
+  padding: 90px 2%;
+  background-color: rgba(245,245,245, .6);
 }
 .footerWrap {
   max-width: 700px;
@@ -748,7 +748,7 @@ footer{
 h3.heading {
   font-size: 22px;
 }
-.headerLeft h3{
+.headerLeft h1{
   font-size: 23px;
   letter-spacing: 2px;
 }
@@ -853,6 +853,9 @@ p.eventText {
   font-size: 18px;
 }
 /* footer */
+footer{
+  padding: 60px 2%;
+}
 .footerBox h4{
   font-size: 18px;
   letter-spacing: 1px;
